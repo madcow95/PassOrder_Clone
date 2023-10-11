@@ -8,12 +8,70 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var name: String = ""
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-            Text("Hello, world!")
+            HStack {
+                Image(systemName: "magnifyingglass")
+                TextField("검색어를 입력하세요.", text: $name)
+//                List {
+//                    Text("1")
+//                    Text("1")
+//                    Text("1")
+//                }
+            }
+            .padding([.leading, .bottom], 30.0)
+            
+            HStack(spacing: 50) {
+                VStack {
+                    Image(systemName: "sun.min")
+                    Text("쿠폰함")
+                        .font(.caption)
+                        .multilineTextAlignment(.center)
+                }
+                .onTapGesture {
+                    print("aaaa")
+                }
+                VStack {
+                    Image(systemName: "p.circle")
+                    Text("포인트/스탬프")
+                        .font(.caption)
+                        .multilineTextAlignment(.center)
+                }
+                .onTapGesture {
+                    print("aaaa")
+                }
+                VStack {
+                    Image(systemName: "bell")
+                    Text("알림")
+                        .font(.caption)
+                        .multilineTextAlignment(.center)
+                }
+                .onTapGesture {
+                    print("aaaa")
+                }
+                VStack {
+                    Image(systemName: "house")
+                    Text("적립마켓")
+                        .font(.caption)
+                        .multilineTextAlignment(.center)
+                }
+                .onTapGesture {
+                    print("aaaa")
+                }
+                VStack {
+                    Image(systemName: "gift")
+                    Text("선물하기")
+                        .font(.caption)
+                        .multilineTextAlignment(.center)
+                }
+                .onTapGesture {
+                    print("aaaa")
+                }
+            }
+            Spacer()
         }
-        .padding()
     }
 }
 
