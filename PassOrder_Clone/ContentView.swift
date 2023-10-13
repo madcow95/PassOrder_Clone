@@ -15,11 +15,6 @@ struct ContentView: View {
             HStack {
                 Image(systemName: "magnifyingglass")
                 TextField("검색어를 입력하세요.", text: $name)
-//                List {
-//                    Text("1")
-//                    Text("1")
-//                    Text("1")
-//                }
             }
             .padding([.leading, .bottom], 30.0)
             
