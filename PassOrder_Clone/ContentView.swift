@@ -18,6 +18,7 @@ struct ContentView: View {
             }
             .padding([.leading, .bottom], 30.0)
             
+            
             HStack(spacing: 50) {
                 VStack {
                     Image(systemName: "sun.min")
