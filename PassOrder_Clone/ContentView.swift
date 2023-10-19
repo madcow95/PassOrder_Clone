@@ -3,7 +3,6 @@
 //  PassOrder_Clone
 //
 //  Created by ChoiKwangWoo on 2023/10/10.
-//
 
 import SwiftUI
 
@@ -27,7 +26,7 @@ struct ContentView: View {
                         .multilineTextAlignment(.center)
                 }
                 .onTapGesture {
-                    print("aaaa")
+                    print("쿠폰함 Tab")
                 }
                 VStack {
                     Image(systemName: "p.circle")
@@ -36,7 +35,7 @@ struct ContentView: View {
                         .multilineTextAlignment(.center)
                 }
                 .onTapGesture {
-                    print("aaaa")
+                    print("포인트 Tab")
                 }
                 VStack {
                     Image(systemName: "bell")
@@ -45,7 +44,7 @@ struct ContentView: View {
                         .multilineTextAlignment(.center)
                 }
                 .onTapGesture {
-                    print("aaaa")
+                    print("알림 Tab")
                 }
                 VStack {
                     Image(systemName: "house")
@@ -54,7 +53,7 @@ struct ContentView: View {
                         .multilineTextAlignment(.center)
                 }
                 .onTapGesture {
-                    print("aaaa")
+                    print("적립마켓 Tab")
                 }
                 VStack {
                     Image(systemName: "gift")
@@ -63,7 +62,7 @@ struct ContentView: View {
                         .multilineTextAlignment(.center)
                 }
                 .onTapGesture {
-                    print("aaaa")
+                    print("선물하기 Tab")
                 }
             }
             Spacer()
