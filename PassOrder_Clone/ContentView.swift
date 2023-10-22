@@ -8,12 +8,14 @@ import SwiftUI
 
 struct ContentView: View {
     @State var searchName: String = ""
+    @State var showGaOpenShop: Bool = false
     
     var body: some View {
         VStack {
             HStack {
                 Image(systemName: "magnifyingglass")
                 TextField("검색어를 입력하세요.", text: $searchName)
+                // searchName의 value -> $searchName.wrappedValue
             }
             .padding([.leading, .bottom], 30.0)
             
@@ -62,6 +64,38 @@ struct ContentView: View {
                 }
                 .onTapGesture {
                     print("선물하기 Tab")
+                }
+            }
+            Spacer()
+            HStack {
+                VStack {
+                    Text("패스머니 기능 OPEN")
+                    Text("빠르게 혜택을 쌓는법 패스머니")
+                }
+                Spacer()
+                Image(systemName: "flame")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 50, height: 50)
+            }
+            .background(Color.blue).scrollContentBackground(.hidden)
+            
+            Spacer()
+            
+            VStack {
+                HStack {
+                    VStack {
+                        Text("XXX 님과")
+                        Text("가까이 있는 매장이에요!")
+                    }
+                    Spacer()
+                    Text("패스 뱃지")
+                }
+                HStack {
+                    Toggle(isOn: $showGaOpenShop) {
+                        Text("가오픈 매장 보기")
+                    }
+                    
                 }
             }
             Spacer()
