@@ -7,16 +7,15 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var name: String = ""
+    @State var searchName: String = ""
     
     var body: some View {
         VStack {
             HStack {
                 Image(systemName: "magnifyingglass")
-                TextField("검색어를 입력하세요.", text: $name)
+                TextField("검색어를 입력하세요.", text: $searchName)
             }
             .padding([.leading, .bottom], 30.0)
-            
             
             HStack(spacing: 50) {
                 VStack {
