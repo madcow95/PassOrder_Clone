@@ -77,7 +77,7 @@ struct ContentView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 50, height: 50)
-            }
+            }.padding(.horizontal, 15.0)
             .background(Color.blue).scrollContentBackground(.hidden)
             
             Spacer()
