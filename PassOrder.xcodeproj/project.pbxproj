@@ -13,6 +13,8 @@
 		CD52FF042B4AE02F0000600B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD52FF022B4AE02F0000600B /* Main.storyboard */; };
 		CD52FF062B4AE0300000600B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD52FF052B4AE0300000600B /* Assets.xcassets */; };
 		CD52FF092B4AE0300000600B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD52FF072B4AE0300000600B /* LaunchScreen.storyboard */; };
+		CDB05D862B4AE168003CAEAD /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB05D852B4AE168003CAEAD /* MainTabBarController.swift */; };
+		CDB05D882B4AE27C003CAEAD /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB05D872B4AE27C003CAEAD /* HomeController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		CD52FF052B4AE0300000600B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD52FF082B4AE0300000600B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD52FF0A2B4AE0300000600B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDB05D852B4AE168003CAEAD /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		CDB05D872B4AE27C003CAEAD /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,9 @@
 		CD52FEFB2B4AE02F0000600B /* PassOrder */ = {
 			isa = PBXGroup;
 			children = (
+				CDB05D842B4AE15A003CAEAD /* ViewModel */,
+				CDB05D832B4AE156003CAEAD /* View */,
+				CDB05D822B4AE144003CAEAD /* Controller */,
 				CD52FEFC2B4AE02F0000600B /* AppDelegate.swift */,
 				CD52FEFE2B4AE02F0000600B /* SceneDelegate.swift */,
 				CD52FF002B4AE02F0000600B /* ViewController.swift */,
@@ -65,6 +72,29 @@
 				CD52FF0A2B4AE0300000600B /* Info.plist */,
 			);
 			path = PassOrder;
+			sourceTree = "<group>";
+		};
+		CDB05D822B4AE144003CAEAD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CDB05D852B4AE168003CAEAD /* MainTabBarController.swift */,
+				CDB05D872B4AE27C003CAEAD /* HomeController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CDB05D832B4AE156003CAEAD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CDB05D842B4AE15A003CAEAD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +170,9 @@
 			files = (
 				CD52FF012B4AE02F0000600B /* ViewController.swift in Sources */,
 				CD52FEFD2B4AE02F0000600B /* AppDelegate.swift in Sources */,
+				CDB05D862B4AE168003CAEAD /* MainTabBarController.swift in Sources */,
 				CD52FEFF2B4AE02F0000600B /* SceneDelegate.swift in Sources */,
+				CDB05D882B4AE27C003CAEAD /* HomeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
