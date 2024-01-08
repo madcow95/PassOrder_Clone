@@ -19,14 +19,12 @@ class MainTabBarController: UITabBarController {
     
     func configureTabBar() {
         
-        // load된 화면의 배경색
-        view.backgroundColor = .brown
-        
         let layout = UICollectionViewFlowLayout()
         
         let home = configureTabBarController(unSelected: UIImage(systemName: "house")!, seleted: UIImage(systemName: "house.fill")!, view: HomeController(collectionViewLayout: layout), title: "홈")
+        let profile = configureTabBarController(unSelected: UIImage(systemName: "person")!, seleted: UIImage(systemName: "person.fill")!, view: ProfileController(collectionViewLayout: layout), title: "프로필")
         
-        viewControllers = [home]
+        viewControllers = [home, profile]
     }
     
     func configureTabBarController(unSelected: UIImage, seleted: UIImage, view: UIViewController, title: String) -> UINavigationController {

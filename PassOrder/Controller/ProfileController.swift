@@ -1,15 +1,15 @@
 //
-//  HomeController.swift
+//  ProfileController.swift
 //  PassOrder
 //
-//  Created by MadCow on 2024/1/7.
+//  Created by MadCow on 2024/1/8.
 //
 
 import UIKit
 
-private let homeCell = "HomeCell"
+private let profileCell = "ProfileCell"
 
-class HomeController: UICollectionViewController {
+class ProfileController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -17,27 +17,25 @@ class HomeController: UICollectionViewController {
     }
     
     func configure() {
-        view.backgroundColor = .red
+        view.backgroundColor = .blue
         
-        collectionView.register(HomeCell.self, forCellWithReuseIdentifier: homeCell)
+        collectionView.register(ProfileCell.self, forCellWithReuseIdentifier: profileCell)
     }
 }
 
-
-// MARK: View의 하단 Tab Bar의 경계선? 표시하는 역할인 듯 하다.
-extension HomeController {
+extension ProfileController {
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: homeCell, for: indexPath) as! HomeCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: profileCell, for: indexPath) as! ProfileCell
         
         return cell
     }
 }
 
-extension HomeController: UICollectionViewDelegateFlowLayout {
+extension ProfileController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = view.frame.width
         // 40은 FeedCell의 widthAndHeight에서 가져온 값이고, 첫번째 8은 위에 둘 공간, 두번째 8은 아래에 둘 공간..?
